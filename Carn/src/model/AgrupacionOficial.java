@@ -74,7 +74,7 @@ public abstract class AgrupacionOficial extends Agrupacion {
 			}
 		}
 		return elim;
-	}
+ 	}
 
 	public Integer getPuntosObtenidos() {
 		return puntosObtenidos;
