@@ -11,7 +11,7 @@ package model;
  */
 public class Chirigota extends AgrupacionOficial implements Callejera {
 	/**
-	 * Atributo munero de paejas de Chirigota
+	 * Atributo n&uacute;mero de parejas de Chirigota
 	 */
 	private Integer numCuples;
 
