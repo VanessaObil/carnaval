@@ -10,7 +10,7 @@ package model;
  */
 public interface Callejera {
 	/**
-	 * Metodo que heredar&aacute;n sus clases hijas
+	 * M&eacute;todo que heredar&aacute;n sus clases hijas
 	 */
 	String amoAescucha();
 
