@@ -3,8 +3,7 @@ package view.concurso;
 import view.*;
 
 public class MenuConcurso {
-	
-	
+
 	public static void opcConcurso() {
 		int opc;
 		do {
@@ -26,7 +25,6 @@ public class MenuConcurso {
 			}
 		} while (opc != 0);
 	}
-	
 
 	private static Object opcCaminito() {
 		// TODO Auto-generated method stub
@@ -47,16 +45,16 @@ public class MenuConcurso {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
 	private static void opcOrdPuntos() {
 		Principal.coac.odenar_por_puntos(Principal.oficial);
 	}
-	
+
 	public static void opcListTodos() {
 		// TODO Auto-generated method stub
 
 	}
-	
+
 	private static void mostrarMenuConcurso() {
 		Util.escribir("\n");
 		Util.escribir("GESTION DEL CONCURSO ");
@@ -77,8 +75,5 @@ public class MenuConcurso {
 		Util.escribir(" 12. Ordenar por el autor.");
 		Util.escribir(" 13. Ordenar por autor de música/letra.");
 	}
-	
-	
-	
-	
+
 }

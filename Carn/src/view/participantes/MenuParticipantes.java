@@ -19,7 +19,7 @@ public class MenuParticipantes {
 			}
 		} while (opc != 0);
 	}
-	
+
 	private static Object opcInscribirPartic() {
 		// TODO Auto-generated method stub
 		return null;
@@ -44,13 +44,12 @@ public class MenuParticipantes {
 		// TODO Auto-generated method stub
 		return null;
 	}
-	
+
 	private static Object opcOrdInteNombre() {
 		// TODO Auto-generated method stub
 		return null;
-		}
-	
-	
+	}
+
 	private static void mostrarMenuIntegrantes() {
 		Util.escribir("\n");
 		Util.escribir("GESTION DE PARTICIPANTES ");
@@ -61,5 +60,5 @@ public class MenuParticipantes {
 		Util.escribir("  5. Listar agrupaciones donde es integrante.");
 		Util.escribir("  6. Ordenar por el nombre.");
 	}
-	
+
 }

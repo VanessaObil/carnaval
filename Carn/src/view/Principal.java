@@ -1,5 +1,7 @@
 package view;
 
+import java.util.Arrays;
+
 import controler.COAC;
 import model.*;
 import view.concurso.*;
@@ -388,6 +390,7 @@ public class Principal {
 
 	/**
 	 * Edita los datos de la Agrupacion seleccionada
+	 * Cambia el nombre, autor de musica o letra y disfraz
 	 */
 	private static void opcEditDatosAgrup() {
 		int opc;
@@ -439,37 +442,31 @@ public class Principal {
 	}
 
 	public static Object opcListChirigotas() {
-		return coac;
+		return COAC.listar_chirigotas(oficial);
 
 	}
 
 	public static Object opcListRomancero() {
-		// TODO Auto-generated method stub
-		return null;
+		return COAC.listar_romanceros(oficial);
 	}
 
 	public static Object opcListCuarteto() {
-		// TODO Auto-generated method stub
-		return null;
+		return COAC.listar_cuartetos(oficial);
 	}
 
 	public static Object opcListComparsa() {
-		// TODO Auto-generated method stub
-		return null;
+		return COAC.listar_comparsas(oficial);
 	}
 
 	public static Object opcOrdMusicaLetra() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public static Object opcOrdAutor() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
 	public static Object opcOrdNombre() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 
