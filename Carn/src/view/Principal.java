@@ -440,7 +440,7 @@ public class Principal {
 
 	public static Object opcListChirigotas() {
 		return coac;
-		
+
 	}
 
 	public static Object opcListRomancero() {
@@ -495,9 +495,10 @@ public class Principal {
 		Util.escribir(" 12. Ordenar por el autor.");
 		Util.escribir(" 13. Ordenar por el autor de música/letra.");
 	}
-/**
- * Finaliza el programa
- */
+
+	/**
+	 * Finaliza el programa
+	 */
 	private static void finDelPrograma() {
 		Util.escribir("\nFin del programa.");
 		System.exit(0);

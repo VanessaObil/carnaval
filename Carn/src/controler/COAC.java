@@ -80,8 +80,10 @@ public class COAC {
 	public void editar_agrupacion(Agrupacion ag) {
 
 	}
+
 /**
  * Lista todas las agrupaciones que se hayan creado
+ * 
  * @see Principal
  */
 	public static void listar_agrupaciones() {
