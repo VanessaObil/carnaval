@@ -389,8 +389,8 @@ public class Principal {
 	}
 
 	/**
-	 * Edita los datos de la Agrupacion seleccionada
-	 * Cambia el nombre, autor de musica o letra y disfraz
+	 * Edita los datos de la Agrupacion seleccionada Cambia el nombre, autor de
+	 * musica o letra y disfraz
 	 */
 	private static void opcEditDatosAgrup() {
 		int opc;
@@ -437,37 +437,60 @@ public class Principal {
 
 	}
 
+	/**
+	 * Muestra por pantalla la lista de todas las agrupaciones
+	 */
 	private static void opcListadoTodo() {
 		COAC.listar_agrupaciones();
 	}
 
+	/**
+	 * Muestra una lista completa de las agrupaciones tipo Chirigota
+	 * 
+	 * @return lista de tipo Chirigota
+	 */
 	public static Object opcListChirigotas() {
 		return COAC.listar_chirigotas(oficial);
 
 	}
 
+	/**
+	 * Muestra una lista completa de las agrupaciones tipo Romancero
+	 * 
+	 * @return lista de tipo Romancero
+	 */
 	public static Object opcListRomancero() {
 		return COAC.listar_romanceros(oficial);
 	}
 
+	/**
+	 * Muestra una lista completa de las agrupaciones tipo Cuarteto
+	 * 
+	 * @return lista de tipo Cuarteto
+	 */
 	public static Object opcListCuarteto() {
 		return COAC.listar_cuartetos(oficial);
 	}
 
+	/**
+	 * Muestra una lista completa de las agrupaciones tipo Comparsa
+	 * 
+	 * @return lista de tipo Comparsa
+	 */
 	public static Object opcListComparsa() {
 		return COAC.listar_comparsas(oficial);
 	}
 
-	public static Object opcOrdMusicaLetra() {
-		return null;
+	public static void opcOrdMusicaLetra() {
+
 	}
 
-	public static Object opcOrdAutor() {
-		return null;
+	public static void opcOrdAutor() {
+
 	}
 
-	public static Object opcOrdNombre() {
-		return null;
+	public static void opcOrdNombre() {
+
 	}
 
 	/**

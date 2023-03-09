@@ -2,8 +2,18 @@ package view.concurso;
 
 import view.*;
 
+/**
+ * <h1>La clase MenuConcurso muestra el men&uacute; del proyecto con el cual el
+ * usuario interactuar&aacute;</h1>
+ * 
+ * @version 1-2023
+ * @author Vanessa
+ * @since 09-03-2023
+ */
 public class MenuConcurso {
-
+/**
+ * Muestra un men&uacute; para que el usuario elija la opci&oacute;n que desee
+ */
 	public static void opcConcurso() {
 		int opc;
 		do {
@@ -25,31 +35,53 @@ public class MenuConcurso {
 			}
 		} while (opc != 0);
 	}
-
+/**
+ * muestra por pantalla un mensaje establecido 
+ * @return muestra el mensaje implementado en la clase padre
+ */
 	private static Object opcCaminito() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+	 * muestra por pantalla un mensaje establecido 
+	 * @return muestra el mensaje implementado en la clase padre
+	 */
 	private static Object opcHaceTipo() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+	 * muestra por pantalla un mensaje establecido 
+	 * @return muestra el mensaje de presentaci&oacute;n de la Agrupacion seleccionada 
+	 */
 	private static Object opcPresentacion() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+	 * muestra por pantalla los puntos asignados 
+	 * @return muestra los puntos asignados de la Agrupacion seleccionada 
+	 */
 	private static Object opcAsigPuntos() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
+	/**
+	 * muestra por pantalla los puntos ordenados
+	 * @return muestra los puntos ordenados de la Agrupaciones  
+	 */
 	private static void opcOrdPuntos() {
 		Principal.coac.odenar_por_puntos(Principal.oficial);
 	}
 
+	/**
+	 * muestra por pantalla un listado de todas las Agrupaciones
+	 */
 	public static void opcListTodos() {
 		// TODO Auto-generated method stub
 

@@ -64,7 +64,7 @@ public class COAC {
 	 * @param agOf <i>Objeto de tipo AgrupacionOficial</i>
 	 * @return true: agrega la Agrupacion
 	 */
-	public  static void odenar_por_puntos(AgrupacionOficial agOf[]) {
+	public static void odenar_por_puntos(AgrupacionOficial agOf[]) {
 		for (int i = 0; i < agOf.length; i++) {
 			Arrays.sort(agOf);
 		}
