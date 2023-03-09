@@ -5,15 +5,41 @@ import model.*;
 import view.concurso.*;
 import view.participantes.*;
 
+/**
+ * <h1>La clase Principal muestra el men&uacute; del proyecto con el cual el
+ * usuario interactuar&aacute;</h1>
+ * 
+ * @version 1-2023
+ * @author Vanessa
+ * @since 09-03-2023
+ */
 public class Principal {
-
+	/**
+	 * Atributo de tipo COAC de Principal
+	 * 
+	 * @see COAC
+	 */
 	public static COAC coac = new COAC();
+	/**
+	 * Atributo array de tipo AgrupacionOficial de Principal
+	 * 
+	 * @see AgrupacipnOficial
+	 */
 	public static AgrupacionOficial[] oficial = new AgrupacionOficial[5];
 
+	/**
+	 * Main que se encargar&aacute; de ejecutar todo el proyecto
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		gestionPrograma();
 	}
 
+	/**
+	 * Gestiona el proyecto mediante un men&uacute; con el que interact&uacute;a el
+	 * usuario
+	 */
 	private static void gestionPrograma() {
 		int opc;
 		do {
@@ -38,6 +64,9 @@ public class Principal {
 		finDelPrograma();
 	}
 
+	/**
+	 * Inscribe una Agrupacion del tipo que se le especifique
+	 */
 	private static void opcinscribirAgrupacion() {
 		int opc;
 		do {
@@ -59,6 +88,13 @@ public class Principal {
 		} while (opc != 0);
 	}
 
+	/**
+	 * A&ntilde;ade una Agrupacion de tipo Chirigota Pide los datos necesarios para
+	 * a&ntilde;adir la Agrupacion
+	 * 
+	 * @return frase en el que se especifica si la Agrupacion fue creada o no se ha
+	 *         creado
+	 */
 	private static void addChirigota() {
 		boolean add;
 		Chirigota c = new Chirigota();
@@ -91,6 +127,13 @@ public class Principal {
 		}
 	}
 
+	/**
+	 * A&ntilde;ade una Agrupacion de tipo Comparsa Pide los datos necesarios para
+	 * a&ntilde;adir la Agrupacion
+	 * 
+	 * @return frase en el que se especifica si la Agrupacion fue creada o no se ha
+	 *         creado
+	 */
 	private static void addComparsa() {
 		boolean add;
 		Comparsa c = new Comparsa();
@@ -123,6 +166,13 @@ public class Principal {
 		}
 	}
 
+	/**
+	 * A&ntilde;ade una Agrupacion de tipo Coro Pide los datos necesarios para
+	 * a&ntilde;adir la Agrupacion
+	 * 
+	 * @return frase en el que se especifica si la Agrupacion fue creada o no se ha
+	 *         creado
+	 */
 	private static void addCoro() {
 		boolean add;
 		Coro c = new Coro();
@@ -158,6 +208,13 @@ public class Principal {
 		}
 	}
 
+	/**
+	 * A&ntilde;ade una Agrupacion de tipo Cuarteto Pide los datos necesarios para
+	 * a&ntilde;adir la Agrupacion
+	 * 
+	 * @return frase en el que se especifica si la Agrupacion fue creada o no se ha
+	 *         creado
+	 */
 	private static void addCuarteto() {
 		boolean add;
 		Cuarteto c = new Cuarteto();
@@ -190,6 +247,13 @@ public class Principal {
 		}
 	}
 
+	/**
+	 * A&ntilde;ade una Agrupacion de tipo Romancero Pide los datos necesarios para
+	 * a&ntilde;adir la Agrupacion
+	 * 
+	 * @return frase en el que se especifica si la Agrupacion fue creada o no se ha
+	 *         creado
+	 */
 	private static void addRomancero() {
 		boolean add;
 		Romancero c = new Romancero();
@@ -222,6 +286,9 @@ public class Principal {
 		}
 	}
 
+	/**
+	 * Elimina Agrupacion Pide los datos necesarios para eliminar la Agrupacion
+	 */
 	private static void opcElimAgrup() {
 		int opc;
 		do {
@@ -243,6 +310,9 @@ public class Principal {
 		} while (opc != 0);
 	}
 
+	/**
+	 * Elimina Agrupacion de tipo Chirigota
+	 */
 	private static void delChirigota() {
 		boolean del;
 		int opc;
@@ -256,6 +326,9 @@ public class Principal {
 
 	}
 
+	/**
+	 * Elimina Agrupacion de tipo Comparrsa
+	 */
 	private static void delComparsa() {
 		boolean del;
 		int opc;
@@ -268,6 +341,9 @@ public class Principal {
 		COAC.eliminar_agrupacion(oficial[opc]);
 	}
 
+	/**
+	 * Elimina Agrupacion de tipo Coro
+	 */
 	private static void delCoro() {
 		boolean del;
 		int opc;
@@ -280,6 +356,9 @@ public class Principal {
 		COAC.eliminar_agrupacion(oficial[opc]);
 	}
 
+	/**
+	 * Elimina Agrupacion de tipo Cuarteto
+	 */
 	private static void delCuarteto() {
 		boolean del;
 		int opc;
@@ -292,6 +371,9 @@ public class Principal {
 		COAC.eliminar_agrupacion(oficial[opc]);
 	}
 
+	/**
+	 * Elimina Agrupacion de tipo Romancero
+	 */
 	private static void delRomancero() {
 		boolean del;
 		int opc;
@@ -304,6 +386,9 @@ public class Principal {
 		COAC.eliminar_agrupacion(oficial[opc]);
 	}
 
+	/**
+	 * Edita los datos de la Agrupacion seleccionada
+	 */
 	private static void opcEditDatosAgrup() {
 		int opc;
 
@@ -354,8 +439,8 @@ public class Principal {
 	}
 
 	public static Object opcListChirigotas() {
-		// TODO Auto-generated method stub
-		return null;
+		return coac;
+		
 	}
 
 	public static Object opcListRomancero() {
@@ -388,6 +473,9 @@ public class Principal {
 		return null;
 	}
 
+	/**
+	 * Muestra el Men&uacute;
+	 */
 	private static void mostrarMenuPrincipal() {
 		Util.escribir("\n");
 		Util.escribir(" GESTION DE AGRUPACIONES ");
@@ -407,7 +495,9 @@ public class Principal {
 		Util.escribir(" 12. Ordenar por el autor.");
 		Util.escribir(" 13. Ordenar por el autor de música/letra.");
 	}
-
+/**
+ * Finaliza el programa
+ */
 	private static void finDelPrograma() {
 		Util.escribir("\nFin del programa.");
 		System.exit(0);

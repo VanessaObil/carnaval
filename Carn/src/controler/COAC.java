@@ -70,41 +70,62 @@ public class COAC {
 	}
 
 	public void odenar_por_autor_musica_letra(Agrupacion ag) {
-		Arrays.sort();
+		Arrays.sort(Principal.oficial);
 
 	}
-
+/**
+ * Edita la agrupacion seleccionada
+ * @param ag <i>Objeto de tipo Agrupacion</i>
+ */
 	public void editar_agrupacion(Agrupacion ag) {
 
 	}
-
+/**
+ * Lista todas las agrupaciones que se hayan creado
+ * @see Principal
+ */
 	public static void listar_agrupaciones() {
 		for (int i = 0; i < Principal.oficial.length; i++) {
 			System.out.println(Principal.oficial);
 		}
 	}
 
-	public void listar_chirigotas() {
+	/**
+	 * Lista todos los grupos de tipo Chirigota
+	 */
+	public static void listar_chirigotas() {
 		
 	}
 
+	/**
+	 * Lista todos los grupos de tipo Coro
+	 * 	 */
 	public void listar_coros() {
 
 	}
 
+	/**
+	 * Lista todos los grupo de tipo Cuarteto
+	 */
 	public void listar_cuartetos() {
 
 	}
 
+	/**
+	 * Lista todos los grupos de tipo Comparsa
+	 */
 	public void listar_comparsas() {
 
 	}
 
+	/**
+	 * Lista todos los grupos de tipo Ropmancero 
+	 * */
 	public void listar_romanceros() {
 
 	}
 /**
- * Inserta un nuevo participante 
+ * Inserta un nuevo participante al grupo que corresponda
  * 
  */
 	public void insertar_participante() {
