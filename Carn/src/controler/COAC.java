@@ -5,7 +5,12 @@ import java.util.Arrays;
 
 import model.Agrupacion;
 import model.AgrupacionOficial;
+import model.Chirigota;
+import model.Comparsa;
+import model.Coro;
+import model.Cuarteto;
 import model.Integrante;
+import model.Romancero;
 import view.Principal;
 
 /**
@@ -95,36 +100,106 @@ public class COAC {
 	/**
 	 * Lista todos los grupos de tipo Chirigota
 	 */
-	public static void listar_chirigotas() {
+	public static Agrupacion[] listar_chirigotas(Agrupacion[] agrupaciones) {
+		int cont = 0;
+		for (int i = 0; i < agrupaciones.length; i++) {
+			if (agrupaciones[i] instanceof Chirigota) {
+				 cont++;
+			}
+		}
 		
+		Chirigota[] chirigota = new Chirigota[cont];
+		cont = 0;
+		for (int i = 0; i < agrupaciones.length; i++) {
+			if (agrupaciones[i] instanceof Chirigota) {
+				chirigota[cont++] = (Chirigota) agrupaciones[i] ;
+			}
+		}
+		return chirigota;
 	}
 
 	/**
 	 * Lista todos los grupos de tipo Coro
 	 * 	 */
-	public void listar_coros() {
-
+	public static Agrupacion[] listar_coros(Agrupacion[] agrupaciones) {
+		int cont = 0;
+		for (int i = 0; i < agrupaciones.length; i++) {
+			if (agrupaciones[i] instanceof Coro) {
+				 cont++;
+			}
+		}
+		
+		Coro[] coro = new Coro[cont];
+		cont = 0;
+		for (int i = 0; i < agrupaciones.length; i++) {
+			if (agrupaciones[i] instanceof Coro) {
+				coro[cont++] = (Coro) agrupaciones[i] ;
+			}
+		}
+		return coro;
 	}
 
 	/**
 	 * Lista todos los grupo de tipo Cuarteto
 	 */
-	public void listar_cuartetos() {
-
+	public static Agrupacion[] listar_cuartetos(Agrupacion[] agrupaciones) {
+		int cont = 0;
+		for (int i = 0; i < agrupaciones.length; i++) {
+			if (agrupaciones[i] instanceof Cuarteto) {
+				 cont++;
+			}
+		}
+		
+		Cuarteto[] cuarteto = new Cuarteto[cont];
+		cont = 0;
+		for (int i = 0; i < agrupaciones.length; i++) {
+			if (agrupaciones[i] instanceof Cuarteto) {
+				cuarteto[cont++] = (Cuarteto) agrupaciones[i] ;
+			}
+		}
+		return cuarteto;
 	}
 
 	/**
 	 * Lista todos los grupos de tipo Comparsa
 	 */
-	public void listar_comparsas() {
-
+	public static Agrupacion[] listar_comparsas(Agrupacion[] agrupaciones) {
+		int cont = 0;
+		for (int i = 0; i < agrupaciones.length; i++) {
+			if (agrupaciones[i] instanceof Comparsa) {
+				 cont++;
+			}
+		}
+		
+		Comparsa[] comparsa = new Comparsa[cont];
+		cont = 0;
+		for (int i = 0; i < agrupaciones.length; i++) {
+			if (agrupaciones[i] instanceof Comparsa) {
+				comparsa[cont++] = (Comparsa) agrupaciones[i] ;
+			}
+		}
+		return comparsa;
 	}
 
 	/**
 	 * Lista todos los grupos de tipo Ropmancero 
 	 * */
-	public void listar_romanceros() {
-
+	public static Agrupacion[] listar_romanceros(Agrupacion[] agrupaciones) {
+		int cont = 0;
+		for (int i = 0; i < agrupaciones.length; i++) {
+			if (agrupaciones[i] instanceof Romancero) {
+				 cont++;
+			}
+		}
+		
+		Romancero[] romancero = new Romancero[cont];
+		cont = 0;
+		for (int i = 0; i < agrupaciones.length; i++) {
+			if (agrupaciones[i] instanceof Romancero) {
+				romancero[cont++] = (Romancero) agrupaciones[i] ;
+			}
+		}
+		return romancero;
 	}
 /**
  * Inserta un nuevo participante al grupo que corresponda
